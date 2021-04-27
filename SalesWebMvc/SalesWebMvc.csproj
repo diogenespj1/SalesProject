@@ -8,15 +8,30 @@
     <Compile Remove="Models\NovaPasta1\**" />
     <Compile Remove="Models\NovaPasta2\**" />
     <Compile Remove="Models\NovaPasta3\**" />
+    <Compile Remove="Views\Departments\**" />
     <Content Remove="Models\NovaPasta1\**" />
     <Content Remove="Models\NovaPasta2\**" />
     <Content Remove="Models\NovaPasta3\**" />
+    <Content Remove="Views\Departments\**" />
     <EmbeddedResource Remove="Models\NovaPasta1\**" />
     <EmbeddedResource Remove="Models\NovaPasta2\**" />
     <EmbeddedResource Remove="Models\NovaPasta3\**" />
+    <EmbeddedResource Remove="Views\Departments\**" />
     <None Remove="Models\NovaPasta1\**" />
     <None Remove="Models\NovaPasta2\**" />
     <None Remove="Models\NovaPasta3\**" />
+    <None Remove="Views\Departments\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\DepartmentsController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Departments\Create.cshtml" />
+    <None Include="Views\Departments\Delete.cshtml" />
+    <None Include="Views\Departments\Details.cshtml" />
+    <None Include="Views\Departments\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +49,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="MvcScaffolding" Version="1.0.9" />
   </ItemGroup>
 
 </Project>
